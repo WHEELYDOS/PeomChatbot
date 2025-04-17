@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="script.js"></script>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>AI Chatbot</h1>
+            <p>This is an AI chatbot app built with Flask, Socket.IO, and OpenAI.</p>
+        </header>
+        
+        <div id="chat-messages" class="chat-messages"></div>
+        
+        <form id="message-form" class="message-form">
+            <textarea 
+                id="message-input" 
+                placeholder="Type your message..." 
+                rows="1"
+                class="message-input"
+            ></textarea>
+            <button type="submit" class="send-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m5 12 7-7 7 7"></path>
+                    <path d="M12 19V5"></path>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <script src="'script.js"></script>
+</body>
+</html>
